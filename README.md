@@ -20,4 +20,4 @@ O projeto aborda os conceitos fundamentais de **Força e Movimento** baseados na
 
 * **Segunda Lei de Newton:** $F_{res} = m \cdot a$
 * **Força Peso:** $P = m \cdot g$
-* **Força Elástica (Lei de Hooke):** $F = k \cdot x$
+* **Força Elástica:** $F = k \cdot x$
