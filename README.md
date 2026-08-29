@@ -1,11 +1,11 @@
 # AnimacaoFisica_Oppenheimer_ForcaEMovimento
 
 ## Integrantes do Grupo
-* Daniela Garcia Dias da Silva - Matrícula: 202510076711
-* Gabriel Felipe Marinelli Wanderley - Matrícula: 202520588711
-* Gyovanna Goes Dos Santos - Matrícula: 202520588611
-* Hellen Vitoria Cardoso da Costa - Matrícula: 202520589311
-* Samuel da Silva Alexandre - Matrícula: 202510075111
+* Daniela Garcia - Matrícula: 202510076711
+* Gabriel Marinelli - Matrícula: 202520588711
+* Gyovanna Goes - Matrícula: 202520588611
+* Hellen Vitoria - Matrícula: 202520589311
+* Samuel da Silva - Matrícula: 202510075111
 
 ---
 
