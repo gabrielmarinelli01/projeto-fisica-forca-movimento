@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Força e Movimento</title>
+<style>
+    body {
+        margin: 0;
+        background: #111;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        overflow: hidden;
+    }
+    h1 {
+        margin-top: 30px;
+        font-size: 36px;
+    }
+    .cena {
+        position: relative;
+        width: 90%;
+        height: 350px;
+        margin: 50px auto;
+        border-bottom: 8px solid white;
+    }
+    .carro {
+        position: absolute;
+        bottom: 8px;
+        left: 5%;
+        width: 100px;
+        height: 55px;
+        background: #e63946;
+        border-radius: 12px 20px 5px 5px;
+        animation: movimento 5s infinite linear;
+    }
+    .carro::before,
+    .carro::after {
+        content: "";
+        position: absolute;
+        bottom: -18px;
+        width: 30px;
+        height: 30px;
+        background: #222;
+        border: 4px solid white;
+        border-radius: 50%;
+    }
+    .carro::before {
+        left: 10px;
+    }
+    .carro::after {
+        right: 10px;
+    }
+    .forca {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        font-size: 28px;
+        color: #00ff88;
+        animation: seta 5s infinite linear;
+    }
+    .velocidade {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        font-size: 25px;
+        color: #00aaff;
+        animation: seta 5s infinite linear;
+    }
+    .texto {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    @keyframes movimento {
+        from {
+            left: 5%;
+        }
+        to {
+            left: 85%;
+        }
+    }
+    @keyframes seta {
+        from {
+            left: 5%;
+        }
+        to {
+            left: 85%;
+        }
+    }
+</style>
+</head>
+<body>
+<h1>⚡ FORÇA & MOVIMENTO ⚡</h1>
+<div class="cena">
+    <div class="carro"></div>
+    <div class="forca">
+        ➜ F = Força
+    </div>
+    <div class="velocidade">
+        ➜ v = Movimento
+    </div>
+</div>
+<div class="texto">
+    Quanto maior a força aplicada, maior pode ser a aceleração do objeto.
+    <br><br>
+    <strong>F = m · a</strong>
+</div>
+</body>
+</html>
