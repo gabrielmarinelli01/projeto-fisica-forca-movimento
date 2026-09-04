@@ -1,0 +1,99 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.animation import FuncAnimation
+from matplotlib.patches import Rectangle, Circle, Arrow
+
+# Configuration
+fig, ax = plt.subplots(figsize=(12, 6))
+ax.set_xlim(0, 25)
+ax.set_ylim(0, 8)
+ax.set_aspect('equal')
+ax.axis('off')
+
+# Road and background
+ax.plot([0, 25], [1, 1], color='gray', linewidth=4)
+
+# Bus components
+bus_body = Rectangle((2, 2), 6, 3, facecolor='yellow', edgecolor='black', linewidth=2)
+ax.add_patch(bus_body)
+
+# Wheels with spokes to show rotation
+wheel1 = Circle((3.5, 2), 0.7, facecolor='black', edgecolor='white', linewidth=1)
+wheel2 = Circle((6.5, 2), 0.7, facecolor='black', edgecolor='white', linewidth=1)
+ax.add_patch(wheel1)
+ax.add_patch(wheel2)
+
+spoke1, = ax.plot([], [], color='white', linewidth=2)
+spoke2, = ax.plot([], [], color='white', linewidth=2)
+
+# Inertia indicator (a small object inside the bus)
+inertia_obj = Circle((5, 3.5), 0.15, color='red')
+ax.add_patch(inertia_obj)
+
+# Velocity arrow
+vel_arrow = None
+
+# Initial Physics State
+state = {
+    'x': 2,
+    'v': 0.25,
+    'a': 0,
+    'theta': 0, # Wheel rotation
+    'tilt': 0   # Suspension tilt
+}
+
+def animate(frame):
+    global vel_arrow
+    
+    # Physics Logic
+    if frame < 30: # Constant speed
+        state['a'] = 0
+    elif frame < 100: # Braking phase
+        state['a'] = -0.004
+        state['tilt'] = min(state['tilt'] + 0.05, 1.5) # Tilt forward
+    else: # Stop
+        state['v'] = 0
+        state['a'] = 0
+        state['tilt'] *= 0.8 # Settle suspension
+
+    state['v'] = max(0, state['v'] + state['a'])
+    state['x'] += state['v']
+    state['theta'] -= (state['v'] / 0.7) # Rotation based on distance
+
+    # Update Bus Body (with slight tilt)
+    bus_body.set_x(state['x'])
+    
+    # Update Wheels
+    w1_x, w2_x = state['x'] + 1.5, state['x'] + 4.5
+    wheel1.center = (w1_x, 2)
+    wheel2.center = (w2_x, 2)
+    
+    # Wheel Spokes rotation
+    s1 = [w1_x + 0.7*np.cos(state['theta']), 2 + 0.7*np.sin(state['theta'])]
+    s2 = [w2_x + 0.7*np.cos(state['theta']), 2 + 0.7*np.sin(state['theta'])]
+    spoke1.set_data([w1_x, s1[0]], [2, s1[1]])
+    spoke2.set_data([w2_x, s2[0]], [2, s2[1]])
+
+    # Inertia Indicator (slides forward during deceleration)
+    inertia_shift = 0
+    if state['a'] < 0 and state['v'] > 0:
+        inertia_shift = 0.8 # Moves to front of bus
+    inertia_obj.center = (state['x'] + 3 + inertia_shift, 3.5)
+
+    # Velocity Arrow
+    if vel_arrow:
+        vel_arrow.remove()
+    if state['v'] > 0.01:
+        arrow_len = state['v'] * 20
+        vel_arrow = ax.annotate('', xy=(state['x'] + 3 + arrow_len, 5.5), 
+                                xytext=(state['x'] + 3, 5.5), 
+                                arrowprops=dict(arrowstyle='->', color='green', lw=3))
+    else:
+        vel_arrow = None
+
+    return bus_body, wheel1, wheel2, spoke1, spoke2, inertia_obj
+
+ani = FuncAnimation(fig, animate, frames=150, interval=40, blit=False)
+plt.close() # Prevents static plot from showing
+from IPython.display import HTML
+HTML(ani.to_jshtml())
