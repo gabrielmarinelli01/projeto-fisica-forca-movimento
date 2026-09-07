@@ -1,0 +1,598 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation, FFMpegWriter
+from matplotlib.patches import Ellipse, Circle
+import random
+
+# ==========================================================
+# CONFIGURAÇÕES
+# ==========================================================
+
+FPS = 30
+DURACAO = 15
+TOTAL_FRAMES = FPS * DURACAO
+
+# Força aplicada nos dois corpos
+F = 10  # N
+
+# Massas
+massa_formiga = 0.001  # kg
+massa_elefante = 5000  # kg
+
+# Acelerações reais pela 2ª Lei de Newton
+a_formiga = F / massa_formiga
+a_elefante = F / massa_elefante
+
+# ==========================================================
+# CONFIGURAÇÃO DA TELA
+# ==========================================================
+
+fig, ax = plt.subplots(figsize=(8, 10))
+
+ax.set_xlim(0, 10)
+ax.set_ylim(0, 12)
+
+ax.set_facecolor("white")
+ax.axis("off")
+
+
+# ==========================================================
+# EFEITO DE DESENHO À MÃO
+# ==========================================================
+
+def linha(x1, y1, x2, y2, largura=2):
+    """
+    Desenha uma linha preta com pequenas imperfeições,
+    simulando um desenho feito à mão.
+    """
+
+    dx = x2 - x1
+    dy = y2 - y1
+
+    pontos = 12
+
+    xs = np.linspace(x1, x2, pontos)
+    ys = np.linspace(y1, y2, pontos)
+
+    ruido = np.random.normal(0, 0.025, pontos)
+
+    xs += ruido
+    ys += ruido
+
+    ax.plot(
+        xs,
+        ys,
+        color="black",
+        linewidth=largura,
+        solid_capstyle="round"
+    )
+
+
+# ==========================================================
+# FORMIGA
+# ==========================================================
+
+def desenhar_formiga(x, y, escala=1):
+
+    # corpo
+    corpo = Ellipse(
+        (x, y),
+        0.8 * escala,
+        0.45 * escala,
+        fill=False,
+        linewidth=2
+    )
+    ax.add_patch(corpo)
+
+    # cabeça
+    cabeca = Circle(
+        (x + 0.48 * escala, y + 0.02 * escala),
+        0.27 * escala,
+        fill=False,
+        linewidth=2
+    )
+    ax.add_patch(cabeca)
+
+    # pernas
+    linha(
+        x - 0.25 * escala,
+        y - 0.15 * escala,
+        x - 0.65 * escala,
+        y - 0.5 * escala
+    )
+
+    linha(
+        x - 0.05 * escala,
+        y - 0.17 * escala,
+        x - 0.15 * escala,
+        y - 0.55 * escala
+    )
+
+    linha(
+        x + 0.15 * escala,
+        y - 0.17 * escala,
+        x + 0.45 * escala,
+        y - 0.5 * escala
+    )
+
+    # antenas
+    linha(
+        x + 0.55 * escala,
+        y + 0.2 * escala,
+        x + 0.85 * escala,
+        y + 0.5 * escala
+    )
+
+    linha(
+        x + 0.6 * escala,
+        y + 0.12 * escala,
+        x + 0.95 * escala,
+        y + 0.2 * escala
+    )
+
+
+# ==========================================================
+# ELEFANTE
+# ==========================================================
+
+def desenhar_elefante(x, y, escala=1):
+
+    # corpo
+    corpo = Ellipse(
+        (x, y),
+        3.0 * escala,
+        1.8 * escala,
+        fill=False,
+        linewidth=2.5
+    )
+    ax.add_patch(corpo)
+
+    # cabeça
+    cabeca = Circle(
+        (x + 1.35 * escala, y + 0.15 * escala),
+        0.85 * escala,
+        fill=False,
+        linewidth=2.5
+    )
+    ax.add_patch(cabeca)
+
+    # orelha
+    orelha = Ellipse(
+        (x + 1.75 * escala, y + 0.2 * escala),
+        1.0 * escala,
+        1.5 * escala,
+        fill=False,
+        linewidth=2
+    )
+    ax.add_patch(orelha)
+
+    # tromba
+    linha(
+        x + 1.85 * escala,
+        y - 0.1 * escala,
+        x + 2.25 * escala,
+        y - 0.45 * escala,
+        5
+    )
+
+    linha(
+        x + 2.25 * escala,
+        y - 0.45 * escala,
+        x + 2.45 * escala,
+        y - 0.3 * escala,
+        5
+    )
+
+    # olho
+    olho = Circle(
+        (x + 1.55 * escala, y + 0.4 * escala),
+        0.08 * escala,
+        fill=False,
+        linewidth=2
+    )
+    ax.add_patch(olho)
+
+    # pernas
+    for dx in [-1.0, -0.3, 0.4, 0.9]:
+
+        linha(
+            x + dx * escala,
+            y - 0.75 * escala,
+            x + dx * escala,
+            y - 1.5 * escala,
+            3
+        )
+
+
+# ==========================================================
+# MÃO
+# ==========================================================
+
+def desenhar_mao(x, y, escala=1):
+
+    # palma
+    palma = Circle(
+        (x, y),
+        0.5 * escala,
+        fill=False,
+        linewidth=2.5
+    )
+    ax.add_patch(palma)
+
+    # dedo indicador
+    linha(
+        x + 0.35 * escala,
+        y,
+        x + 1.1 * escala,
+        y,
+        7
+    )
+
+    # outros dedos
+    linha(
+        x - 0.2 * escala,
+        y + 0.35 * escala,
+        x - 0.7 * escala,
+        y + 0.65 * escala,
+        4
+    )
+
+    linha(
+        x - 0.35 * escala,
+        y + 0.1 * escala,
+        x - 0.9 * escala,
+        y + 0.2 * escala,
+        4
+    )
+
+    linha(
+        x - 0.3 * escala,
+        y - 0.2 * escala,
+        x - 0.8 * escala,
+        y - 0.45 * escala,
+        4
+    )
+
+
+# ==========================================================
+# TEXTOS
+# ==========================================================
+
+titulo = ax.text(
+    5,
+    11.2,
+    "",
+    ha="center",
+    fontsize=24,
+    fontweight="bold"
+)
+
+texto = ax.text(
+    5,
+    1.2,
+    "",
+    ha="center",
+    fontsize=15
+)
+
+formula = ax.text(
+    5,
+    0.5,
+    "",
+    ha="center",
+    fontsize=18,
+    fontweight="bold"
+)
+
+
+# ==========================================================
+# LIMPAR DESENHOS
+# ==========================================================
+
+def limpar():
+
+    for patch in ax.patches:
+        patch.remove()
+
+    for line in ax.lines:
+        line.remove()
+
+    # remove textos extras criados durante a animação
+    for txt in list(ax.texts):
+
+        if txt not in [titulo, texto, formula]:
+            txt.remove()
+
+
+# ==========================================================
+# ANIMAÇÃO
+# ==========================================================
+
+def atualizar(frame):
+
+    limpar()
+
+    tempo = frame / FPS
+
+    # ======================================================
+    # 0 - 3 SEGUNDOS
+    # INTRODUÇÃO
+    # ======================================================
+
+    if tempo < 3:
+
+        titulo.set_text("FORÇA E MOVIMENTO")
+
+        texto.set_text(
+            "O que acontece quando aplicamos a mesma força\n"
+            "em corpos com massas muito diferentes?"
+        )
+
+        formula.set_text("")
+
+        desenhar_formiga(3, 6, 1.2)
+
+        desenhar_elefante(7, 6, 0.9)
+
+        ax.text(
+            3,
+            4.8,
+            "FORMIGA",
+            ha="center",
+            fontsize=16
+        )
+
+        ax.text(
+            7,
+            4.0,
+            "ELEFANTE",
+            ha="center",
+            fontsize=16
+        )
+
+    # ======================================================
+    # 3 - 6 SEGUNDOS
+    # MASSAS
+    # ======================================================
+
+    elif tempo < 6:
+
+        titulo.set_text("PRIMEIRO: A MASSA")
+
+        texto.set_text(
+            "A massa de cada corpo é muito diferente."
+        )
+
+        formula.set_text("")
+
+        desenhar_formiga(3, 6, 1.2)
+
+        desenhar_elefante(7, 6, 0.9)
+
+        ax.text(
+            3,
+            4.8,
+            "m = 0,001 kg",
+            ha="center",
+            fontsize=16
+        )
+
+        ax.text(
+            7,
+            4.0,
+            "m = 5.000 kg",
+            ha="center",
+            fontsize=16
+        )
+
+    # ======================================================
+    # 6 - 9 SEGUNDOS
+    # FORMIGA
+    # ======================================================
+
+    elif tempo < 9:
+
+        titulo.set_text("A MESMA FORÇA NA FORMIGA")
+
+        t = tempo - 6
+
+        # movimento exagerado para ser visual
+        deslocamento = min(t * 2.0, 5)
+
+        desenhar_formiga(
+            2.5 + deslocamento,
+            6,
+            1.2
+        )
+
+        desenhar_mao(
+            1.0,
+            6,
+            0.9
+        )
+
+        # seta
+        ax.arrow(
+            1.7,
+            7,
+            1.5,
+            0,
+            head_width=0.2,
+            head_length=0.25,
+            linewidth=2
+        )
+
+        ax.text(
+            2.4,
+            7.4,
+            "F = 10 N",
+            ha="center",
+            fontsize=15
+        )
+
+        texto.set_text(
+            "Como a massa da formiga é pequena,\n"
+            "ela adquire uma grande aceleração."
+        )
+
+        formula.set_text(
+            "a = F / m = 10 / 0,001 = 10.000 m/s²"
+        )
+
+    # ======================================================
+    # 9 - 12 SEGUNDOS
+    # ELEFANTE
+    # ======================================================
+
+    elif tempo < 12:
+
+        titulo.set_text("A MESMA FORÇA NO ELEFANTE")
+
+        t = tempo - 9
+
+        # quase não se move
+        deslocamento = min(t * 0.12, 0.35)
+
+        desenhar_elefante(
+            6.5 + deslocamento,
+            6,
+            0.9
+        )
+
+        desenhar_mao(
+            4.2,
+            6,
+            1.2
+        )
+
+        ax.arrow(
+            5.5,
+            7.6,
+            1.0,
+            0,
+            head_width=0.25,
+            head_length=0.3,
+            linewidth=2
+        )
+
+        ax.text(
+            6,
+            8,
+            "F = 10 N",
+            ha="center",
+            fontsize=15
+        )
+
+        texto.set_text(
+            "O elefante possui uma massa enorme.\n"
+            "Por isso, sua aceleração é muito pequena."
+        )
+
+        formula.set_text(
+            "a = F / m = 10 / 5.000 = 0,002 m/s²"
+        )
+
+    # ======================================================
+    # 12 - 15 SEGUNDOS
+    # CONCLUSÃO
+    # ======================================================
+
+    else:
+
+        titulo.set_text("A MASSA FAZ A DIFERENÇA")
+
+        desenhar_formiga(
+            2.5,
+            7,
+            1.1
+        )
+
+        desenhar_elefante(
+            7,
+            7,
+            0.8
+        )
+
+        ax.text(
+            2.5,
+            5.6,
+            "FORMIGA",
+            ha="center",
+            fontsize=17,
+            fontweight="bold"
+        )
+
+        ax.text(
+            2.5,
+            5.1,
+            "massa pequena",
+            ha="center",
+            fontsize=14
+        )
+
+        ax.text(
+            7,
+            5.0,
+            "ELEFANTE",
+            ha="center",
+            fontsize=17,
+            fontweight="bold"
+        )
+
+        ax.text(
+            7,
+            4.5,
+            "massa grande",
+            ha="center",
+            fontsize=14
+        )
+
+        texto.set_text(
+            "Com a mesma força: quanto maior a massa,\n"
+            "menor será a aceleração."
+        )
+
+        formula.set_text(
+            "F = m · a"
+        )
+
+
+# ==========================================================
+# GERAR ANIMAÇÃO
+# ==========================================================
+
+animacao = FuncAnimation(
+    fig,
+    atualizar,
+    frames=TOTAL_FRAMES,
+    interval=1000 / FPS,
+    repeat=False
+)
+
+
+# ==========================================================
+# MOSTRAR NA TELA
+# ==========================================================
+
+plt.show()
+
+
+# ==========================================================
+# SALVAR COMO MP4
+# ==========================================================
+#
+# Depois de testar, você pode comentar o plt.show()
+# e usar:
+#
+# escritor = FFMpegWriter(
+#     fps=FPS,
+#     metadata={"title": "Força e Movimento"}
+# )
+#
+# animacao.save(
+#     "forca_e_massa.mp4",
+#     writer=escritor,
+#     dpi=150
+# )
+#
+# ==========================================================
