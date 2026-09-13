@@ -1,18 +1,11 @@
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
-from matplotlib.patches import Rectangle, Circle, FancyBboxPatch
-
-# ==========================================================
-# CONFIGURAÇÕES
-# ==========================================================
+from matplotlib.patches import FancyBboxPatch, Circle
+from IPython.display import HTML
 
 FPS = 30
 DURACAO = 5
 TOTAL_FRAMES = FPS * DURACAO
-
-# ==========================================================
-# FIGURA
-# ==========================================================
 
 fig, ax = plt.subplots(figsize=(12, 7))
 
@@ -23,10 +16,7 @@ ax.set_xlim(0, 100)
 ax.set_ylim(0, 70)
 ax.axis("off")
 
-# ==========================================================
-# TÍTULO
-# ==========================================================
-
+# Título
 ax.text(
     50, 64,
     "⚡ FORÇA & MOVIMENTO ⚡",
@@ -36,30 +26,17 @@ ax.text(
     ha="center"
 )
 
-# ==========================================================
-# CHÃO
-# ==========================================================
+# Chão
+ax.plot([5, 95], [15, 15], color="white", linewidth=5)
 
-ax.plot(
-    [5, 95],
-    [15, 15],
-    color="white",
-    linewidth=5
-)
-
-# ==========================================================
-# CARRINHO
-# ==========================================================
-
+# Carrinho
 carro = FancyBboxPatch(
     (5, 15),
     10,
     5.5,
     boxstyle="round,pad=0.1,rounding_size=1",
-    facecolor="#e63946",
-    edgecolor="#e63946"
+    facecolor="#e63946"
 )
-
 ax.add_patch(carro)
 
 # Rodas
@@ -82,39 +59,27 @@ roda2 = Circle(
 ax.add_patch(roda1)
 ax.add_patch(roda2)
 
-# ==========================================================
-# SETA DA FORÇA
-# ==========================================================
-
+# Força
 forca = ax.text(
-    5,
-    32,
+    5, 32,
     "➜ F = Força",
     color="#00ff88",
     fontsize=20,
     fontweight="bold"
 )
 
-# ==========================================================
-# SETA DA VELOCIDADE
-# ==========================================================
-
+# Velocidade
 velocidade = ax.text(
-    5,
-    25,
+    5, 25,
     "➜ v = Movimento",
     color="#00aaff",
     fontsize=18,
     fontweight="bold"
 )
 
-# ==========================================================
-# TEXTO EXPLICATIVO
-# ==========================================================
-
+# Texto
 ax.text(
-    50,
-    7,
+    50, 7,
     "Quanto maior a força aplicada, maior pode ser a aceleração do objeto.",
     color="white",
     fontsize=15,
@@ -122,8 +87,7 @@ ax.text(
 )
 
 ax.text(
-    50,
-    3,
+    50, 3,
     "F = m · a",
     color="white",
     fontsize=22,
@@ -131,40 +95,19 @@ ax.text(
     ha="center"
 )
 
-# ==========================================================
 # ANIMAÇÃO
-# ==========================================================
-
 def animar(frame):
 
-    # Movimento de 5% até 85%
     progresso = frame / (TOTAL_FRAMES - 1)
 
     x = 5 + progresso * 80
 
-    # --------------------------
-    # Carrinho
-    # --------------------------
-
     carro.set_x(x)
-
-    # --------------------------
-    # Rodas
-    # --------------------------
 
     roda1.center = (x + 2, 14.2)
     roda2.center = (x + 8, 14.2)
 
-    # --------------------------
-    # Força
-    # --------------------------
-
     forca.set_position((x, 32))
-
-    # --------------------------
-    # Velocidade
-    # --------------------------
-
     velocidade.set_position((x, 25))
 
     return carro, roda1, roda2, forca, velocidade
@@ -178,8 +121,5 @@ animacao = FuncAnimation(
     blit=True
 )
 
-# ==========================================================
-# MOSTRAR ANIMAÇÃO
-# ==========================================================
-
-plt.show()
+# MOSTRAR NO GOOGLE COLAB
+HTML(animacao.to_jshtml())
