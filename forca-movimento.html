@@ -5,43 +5,7 @@ from matplotlib.patches import Ellipse, Circle
 import random
 
 # ==========================================================
-# CONFIGURAÇÕES
-# ==========================================================
 
-FPS = 30
-DURACAO = 15
-TOTAL_FRAMES = FPS * DURACAO
-
-# Força aplicada nos dois corpos
-F = 10  # N
-
-# Massas
-massa_formiga = 0.001  # kg
-massa_elefante = 5000  # kg
-
-# Acelerações reais pela 2ª Lei de Newton
-a_formiga = F / massa_formiga
-a_elefante = F / massa_elefante
-
-# ==========================================================
-# CONFIGURAÇÃO DA TELA
-# ==========================================================
-
-fig, ax = plt.subplots(figsize=(8, 10))
-
-ax.set_xlim(0, 10)
-ax.set_ylim(0, 12)
-
-ax.set_facecolor("white")
-ax.axis("off")
-
-
-# ==========================================================
-# EFEITO DE DESENHO À MÃO
-# ==========================================================
-
-def linha(x1, y1, x2, y2, largura=2):
-    """
     Desenha uma linha preta com pequenas imperfeições,
     simulando um desenho feito à mão.
     """
