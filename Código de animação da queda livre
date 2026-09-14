@@ -1,0 +1,123 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+from matplotlib.patches import Rectangle, Circle
+
+# -----------------------------
+# DADOS DA QUEDA
+# -----------------------------
+g = 9.8          # gravidade (m/s²)
+h = 20           # altura do prédio (m)
+
+# Tempo total da queda
+tempo_total = np.sqrt(2 * h / g)
+
+# Cria os instantes de tempo
+t = np.linspace(0, tempo_total, 120)
+
+# Equação da posição
+y = h - 0.5 * g * t**2
+
+# -----------------------------
+# CONFIGURAÇÃO DA FIGURA
+# -----------------------------
+fig, ax = plt.subplots(figsize=(7, 9))
+
+ax.set_xlim(-3, 7)
+ax.set_ylim(-1, 25)
+ax.set_aspect("equal")
+ax.set_title("Queda Livre")
+ax.set_xlabel("Distância horizontal")
+ax.set_ylabel("Altura (m)")
+
+# -----------------------------
+# PRÉDIO
+# -----------------------------
+predio = Rectangle(
+    (0, 0),       # posição
+    4,             # largura
+    h,             # altura
+    facecolor="lightgray",
+    edgecolor="black"
+)
+
+ax.add_patch(predio)
+
+# -----------------------------
+# PESSOA
+# -----------------------------
+# cabeça
+cabeca = Circle((2, h + 1), 0.35, color="black")
+ax.add_patch(cabeca)
+
+# corpo
+ax.plot(
+    [2, 2],
+    [h + 0.7, h - 0.2],
+    color="black",
+    linewidth=3
+)
+
+# braço segurando a bola
+ax.plot(
+    [2, 2.5],
+    [h, h - 0.2],
+    color="black",
+    linewidth=3
+)
+
+# -----------------------------
+# BOLA
+# -----------------------------
+bola = Circle(
+    (2.5, h - 0.2),
+    0.25,
+    color="red"
+)
+
+ax.add_patch(bola)
+
+# -----------------------------
+# TEXTOS
+# -----------------------------
+texto = ax.text(
+    -2.5,
+    23,
+    "",
+    fontsize=12
+)
+
+# -----------------------------
+# FUNÇÃO DA ANIMAÇÃO
+# -----------------------------
+def atualizar(i):
+
+    # Atualiza a posição da bola
+    bola.center = (2.5, y[i])
+
+    # Calcula a velocidade
+    velocidade = g * t[i]
+
+    # Atualiza o texto
+    texto.set_text(
+        f"Tempo = {t[i]:.2f} s\n"
+        f"Velocidade = {velocidade:.2f} m/s"
+    )
+
+    return bola, texto
+
+
+# -----------------------------
+# CRIA A ANIMAÇÃO
+# -----------------------------
+animacao = FuncAnimation(
+    fig,
+    atualizar,
+    frames=len(t),
+    interval=40,
+    blit=True,
+    repeat=False
+)
+from IPython.display import HTML
+
+HTML(animacao.to_jshtml())
