@@ -1,0 +1,299 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+from matplotlib.patches import Rectangle, Circle
+from IPython.display import HTML
+
+# ============================================================
+# CONFIGURAÇÃO
+# ============================================================
+
+fig, ax = plt.subplots(figsize=(11, 6))
+
+ax.set_xlim(0, 13)
+ax.set_ylim(0, 8)
+ax.set_aspect("equal")
+ax.axis("off")
+
+# ============================================================
+# MESA
+# ============================================================
+
+ax.plot(
+    [0, 9],
+    [3, 3],
+    color="black",
+    linewidth=4
+)
+
+# ============================================================
+# POLIA
+# ============================================================
+
+polia = Circle(
+    (9, 3),
+    0.65,
+    fill=False,
+    linewidth=4
+)
+
+ax.add_patch(polia)
+
+# Eixo da polia
+ax.plot(
+    9, 3,
+    "o",
+    color="black",
+    markersize=8
+)
+
+# ============================================================
+# BLOCOS
+# ============================================================
+
+# Bloco A (sobre a mesa)
+bloco_A = Rectangle(
+    (2, 3.1),
+    1.7,
+    1.2,
+    facecolor="royalblue",
+    edgecolor="black",
+    linewidth=2
+)
+
+# Bloco B (pendurado)
+bloco_B = Rectangle(
+    (9.05, 0.8),
+    1.4,
+    1.4,
+    facecolor="tomato",
+    edgecolor="black",
+    linewidth=2
+)
+
+ax.add_patch(bloco_A)
+ax.add_patch(bloco_B)
+
+# ============================================================
+# NOMES DOS BLOCOS
+# ============================================================
+
+texto_A = ax.text(
+    2.85,
+    3.7,
+    "A",
+    fontsize=18,
+    ha="center",
+    va="center"
+)
+
+texto_B = ax.text(
+    9.75,
+    1.5,
+    "B",
+    fontsize=18,
+    ha="center",
+    va="center"
+)
+
+# ============================================================
+# CORDA
+# ============================================================
+
+corda_horizontal, = ax.plot(
+    [],
+    [],
+    color="black",
+    linewidth=3
+)
+
+corda_vertical, = ax.plot(
+    [],
+    [],
+    color="black",
+    linewidth=3
+)
+
+# ============================================================
+# SETAS DA TRAÇÃO
+# ============================================================
+
+seta_A, = ax.plot(
+    [],
+    [],
+    color="green",
+    linewidth=3
+)
+
+seta_B, = ax.plot(
+    [],
+    [],
+    color="green",
+    linewidth=3
+)
+
+# ============================================================
+# TEXTO
+# ============================================================
+
+titulo = ax.text(
+    6.5,
+    7,
+    "Sistema de dois blocos com polia",
+    fontsize=18,
+    ha="center"
+)
+
+informacao = ax.text(
+    6.5,
+    6.3,
+    "",
+    fontsize=13,
+    ha="center"
+)
+
+# ============================================================
+# MOVIMENTO
+# ============================================================
+
+frames = 180
+
+def atualizar(i):
+
+    # ----------------------------------------
+    # Movimento periódico
+    # ----------------------------------------
+
+    movimento = 1.5 * np.sin(i * 0.06)
+
+    # Posição horizontal do bloco A
+    x_A = 2.5 + movimento
+
+    # Posição vertical do bloco B
+    y_B = 1.7 - movimento * 0.8
+
+    # ----------------------------------------
+    # Atualiza bloco A
+    # ----------------------------------------
+
+    bloco_A.set_xy(
+        (x_A, 3.1)
+    )
+
+    texto_A.set_position(
+        (x_A + 0.85, 3.7)
+    )
+
+    # ----------------------------------------
+    # Atualiza bloco B
+    # ----------------------------------------
+
+    bloco_B.set_xy(
+        (9.05, y_B - 0.7)
+    )
+
+    texto_B.set_position(
+        (9.75, y_B)
+    )
+
+    # ----------------------------------------
+    # Corda horizontal
+    # ----------------------------------------
+
+    corda_horizontal.set_data(
+        [
+            x_A + 1.7,
+            9
+        ],
+        [
+            3.7,
+            3
+        ]
+    )
+
+    # ----------------------------------------
+    # Corda vertical
+    # ----------------------------------------
+
+    corda_vertical.set_data(
+        [
+            9.0,
+            9.0
+        ],
+        [
+            3,
+            y_B
+        ]
+    )
+
+    # ----------------------------------------
+    # TRAÇÃO NO BLOCO A
+    # ----------------------------------------
+
+    if np.cos(i * 0.06) > 0:
+
+        seta_A.set_data(
+            [x_A + 1.7, x_A + 2.4],
+            [3.7, 3.7]
+        )
+
+        seta_B.set_data(
+            [9.75, 9.75],
+            [y_B, y_B - 0.8]
+        )
+
+    else:
+
+        seta_A.set_data(
+            [x_A, x_A - 0.7],
+            [3.7, 3.7]
+        )
+
+        seta_B.set_data(
+            [9.75, 9.75],
+            [y_B, y_B + 0.8]
+        )
+
+    # ----------------------------------------
+    # Texto informativo
+    # ----------------------------------------
+
+    if np.cos(i * 0.06) > 0:
+        informacao.set_text(
+            "A corda transmite a tração → o bloco A é puxado para a direita"
+        )
+    else:
+        informacao.set_text(
+            "O movimento se inverte → a direção do sistema muda"
+        )
+
+    return (
+        bloco_A,
+        bloco_B,
+        texto_A,
+        texto_B,
+        corda_horizontal,
+        corda_vertical,
+        seta_A,
+        seta_B,
+        informacao
+    )
+
+# ============================================================
+# CRIAÇÃO DA ANIMAÇÃO
+# ============================================================
+
+animacao = FuncAnimation(
+    fig,
+    atualizar,
+    frames=frames,
+    interval=40,
+    blit=True,
+    repeat=True
+)
+
+# ============================================================
+# MOSTRAR NO GOOGLE COLAB
+# ============================================================
+
+HTML(animacao.to_jshtml())
