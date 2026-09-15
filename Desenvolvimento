@@ -24,10 +24,10 @@ Parte 3: As Forças Especiais
 Status: ⏳ Planejamento
 
   Peso (P = mg)
-  - [ ] Animação de objetos caindo
-  - [ ] Texto e setas indicativas
-  - [ ] Gravação/edição de áudio (locução)
-  - [ ] Revisão final
+  - [x] Animação de objetos caindo
+  - [x] Texto e setas indicativas
+  - [x] Gravação/edição de áudio (locução)
+  - [x] Revisão final
 
   Normal (N)
   - [ ] Animação de superfícies e contato
