@@ -22,6 +22,8 @@ O projeto aborda os conceitos fundamentais de **Força e Movimento** baseados na
 * **Força Peso:** $P = m \cdot g$
 * **Força Elástica:** $F = k \cdot x$
 
+---
+
 ## Relatório de Divulgação
 
 A ideia foi todo mundo ajudar na divulgação do vídeo. Logo após a publicação, todos os membros compartilharam nos grupos de WhatsApp que participavam e também nos stories das contas do Instagram.
