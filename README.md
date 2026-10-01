@@ -52,6 +52,15 @@ Dentro do tema amplo de **Força e Movimento** e da inspiração no contexto his
 
 ---
 
+## Estratégia de Divulgação
+
+A estratégia de divulgação do projeto apoia-se em uma abordagem colaborativa com o objetivo de otimizar o alcance e a visibilidade do material acadêmico produzido. O plano de divulgação está estruturado nos seguintes eixos:
+
+1. **Engajamento Coletivo da Equipe:** Todos os integrantes atuam ativamente como agentes de divulgação assim que o vídeo for oficialmente publicado.
+  2. **Dilvugação em redes acadêmicas e sociais:** Compartilhamento direcionado do link do projeto em grupos de mensagens (WhatsApp) voltados a estudantes e comunidades acadêmicas, além da publicação em perfis pessoais de redes sociais (Instagram).
+  
+
+---
 ## Acompanhamento e Evolução do Projeto (Kanban)
 
 A gestão das tarefas da Etapa 3 foi realizada diretamente no **GitHub Projects**. A evolução do trabalho ao longo do ciclo de desenvolvimento encontra-se registrada abaixo:
