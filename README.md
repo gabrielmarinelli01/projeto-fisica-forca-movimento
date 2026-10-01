@@ -3,12 +3,12 @@
 
 ---
 
-## Integrantes do Grupo
-* **Daniela Garcia**
-* **Gabriel Marinelli**
-* **Gyovanna Goes**
-* **Hellen Cardoso** (Líder)
-* **Samuel Alexandre**
+##  Integrantes do Grupo
+* **Daniela Garcia** — Matrícula: [202510076711]
+* **Gabriel Marinelli** — Matrícula: [202520588711]
+* **Gyovanna Goes** — Matrícula: [202520588611]
+* **Hellen Cardoso** (Líder) — Matrícula: [202520589311]
+* **Samuel Alexandre** — Matrícula: [202510075111]**
 
 ---
 
