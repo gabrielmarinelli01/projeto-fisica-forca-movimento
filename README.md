@@ -18,9 +18,21 @@ J. Robert Oppenheimer foi um físico teórico norte-americano, amplamente conhec
 ## Resumo do Conteúdo de Física
 O projeto aborda os conceitos fundamentais de **Força e Movimento** baseados nas Leis de Newton e tipos de forças:
 
+O vídeo aborda a dinâmica de um corpo a deslizar num plano inclinado, fundamentando-se na Segunda Lei de Newton (Princípio Fundamental da Dinâmica). Esta lei estabelece que a força resultante aplicada a um corpo é diretamente proporcional à sua aceleração:
+
 * **Segunda Lei de Newton:** $F_{res} = m \cdot a$
+
+Para analisar o movimento, decompõe-se a força gravítica (peso) em duas componentes em relação ao plano: a componente paralela ao movimento ($P_x$) e a componente perpendicular ($P_y$):
+
 * **Força Peso:** $P = m \cdot g$
+
+Como o sistema inclui uma mola, introduz-se a Força Elástica (Lei de Hooke), que é proporcional à deformação ($x$) e à constante elástica da mola ($k$): 
+
 * **Força Elástica:** $F = k \cdot x$
+
+A aceleração é determinada pela resultante destas forças. Considerando a mola e o atrito a resistirem à descida do bloco, a equação expandida fica:
+
+$$m \cdot g \cdot \sin(\theta) - \mu_c \cdot m \cdot g \cdot \cos(\theta) - k \cdot x = m \cdot a$$
 
 ---
 
