@@ -26,7 +26,7 @@ Este repositório tem como objetivo organizar e acompanhar as entregas da equipe
 
 ---
 
-## 🎯 Justificativa da Escolha do Recorte em "Força e Movimento"
+## Justificativa da Escolha do Recorte em "Força e Movimento"
 
 A escolha do nome do nosso grupo e da temática baseia-se na trajetória do físico **J. Robert Oppenheimer** e no seu papel fundamental na liderança do Projeto Manhattan durante a Segunda Guerra Mundial. 
 
@@ -52,7 +52,7 @@ Dentro do tema amplo de **Força e Movimento** e da inspiração no contexto his
 
 ---
 
-## 📊 Acompanhamento e Evolução do Projeto (Kanban)
+## Acompanhamento e Evolução do Projeto (Kanban)
 
 A gestão das tarefas da Etapa 3 foi realizada diretamente no **GitHub Projects**. A evolução do trabalho ao longo do ciclo de desenvolvimento encontra-se registrada abaixo:
 
@@ -87,7 +87,7 @@ A gestão das tarefas da Etapa 3 foi realizada diretamente no **GitHub Projects*
 
 ---
 
-## 📚 Fontes e Referências
+## Fontes e Referências
 
 1. **HALLIDAY, David; RESNICK, Robert; WALKER, Jearl.** *Fundamentos de Física: Mecânica*. Vol. 1. 10. ed. Rio de Janeiro: LTC, 2016.
 2. **BRASIL ESCOLA.** *Dinâmica: conceitos, fórmulas, exercícios*.
