@@ -29,27 +29,27 @@ A ideia foi todo mundo ajudar na divulgação do vídeo. Logo após a publicaç�
 Além disso, correntes de divulgação foram criadas para os nossos amigos compartilharem com outras pessoas também. A ideia foi fazer o vídeo chegar cada vez mais longe e para todo tipo de pessoas.
 
 * Hellen
-Canais utilizados: WhatsApp/Telegram e Instagram
+* Canais utilizados: WhatsApp/Telegram e Instagram
 
 Ações realizadas: Compartilhou o link do vídeo do YouTube nos stories do Instagram com uma breve chamada chamando atenção para o experimento. No WhatsApp, enviou diretamente para amigos e nos grupos de família pedindo engajamento, além de encaminhar para grupos da UERJ, como o "Horários Ônibus" e "Engenharia de Produção".
 
 * Samuel
-Canais utilizados: WhatsApp e Instagram
+* Canais utilizados: WhatsApp e Instagram
 
 Ações realizadas: Publicou o link do vídeo no grupo "Engenharias UERJ-ZO" no Whatsapp e divulgou nos stories do Instagram. A abordagem foi focada em ajudar outros alunos que também estão estudando o Princípio Fundamental da Dinâmica.
 
 * Gabriel
-Canais utilizados: WhatsApp
+* Canais utilizados: WhatsApp
 
 Ações realizadas: Publicou o link do vídeo em grupos de amigos e parentes.
 
 * Daniela
-Canais utilizados: WhatsApp, Instagram e Tik Tok
+* Canais utilizados: WhatsApp, Instagram e Tik Tok
 
 Ações realizadas: Publicou o link do vídeo em grupos de amigos e parentes, além de criar cortes dos melhores momentos do vídeo, o que foi pensado para despertar curiosidade em assistir todo ele.
 
 * Gyovanna
-Canais utilizados: WhatsApp, Instagram e Tik Tok
+* Canais utilizados: WhatsApp, Instagram e Tik Tok
 
 Ações realizadas: Publicou o link do vídeo em grupos de amigos, da faculdade e família.
 
