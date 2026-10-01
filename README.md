@@ -51,5 +51,5 @@ Ações realizadas: Publicou o link do vídeo em grupos de amigos e parentes, al
 * Gyovanna
 * Canais utilizados: WhatsApp, Instagram e Tik Tok
 
-Ações realizadas: Publicou o link do vídeo em grupos de amigos, da faculdade e família.
+Ações realizadas: Publicou o link do vídeo em grupos de amigos, da faculdade, família e fóruns/comunidades.
 
