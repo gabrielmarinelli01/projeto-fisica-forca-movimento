@@ -102,6 +102,7 @@ A gestão das tarefas da Etapa 3 foi realizada diretamente no **GitHub Projects*
 ### Reprodução das animações
 
 Para reproduzir as animações, basta executar o código desenvolvido em Python. Após criar ou abrir o código no ambiente Python, é só rodá-lo para que a animação seja executada imediatamente.
+
 ---
 
 ## Fontes e Referências
