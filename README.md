@@ -67,3 +67,6 @@ Ações realizadas: Publicou o link do vídeo em grupos de amigos e parentes, al
 
 Ações realizadas: Publicou o link do vídeo em grupos de amigos, da faculdade, família e fóruns/comunidades.
 
+### Reprodução das animações
+
+Para reproduzir as animações, basta executar o código desenvolvido em Python. Após criar ou abrir o código no ambiente Python, é só rodá-lo para que a animação seja executada imediatamente.
