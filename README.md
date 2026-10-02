@@ -88,27 +88,32 @@ A estratégia de divulgação do projeto apoia-se em uma abordagem colaborativa 
 1. **Engajamento Coletivo da Equipe:** Todos os integrantes atuam ativamente como agentes de divulgação assim que o vídeo for oficialmente publicado.
   2. **Dilvugação em redes acadêmicas e sociais:** Compartilhamento direcionado do link do projeto em grupos de mensagens (WhatsApp) voltados a estudantes e comunidades acadêmicas, além da publicação em perfis pessoais de redes sociais (Instagram).
   
-Integrante 1: Hellen
+* Integrante 1: Hellen
+  
 Canais utilizados: WhatsApp e Instagram.
 
 Ações realizadas: No dia 1 compartilhou o link do vídeo do YouTube nos stories do Instagram com uma breve chamada chamando atenção para o projeto. No WhatsApp, enviou diretamente para os grupos de graduandos da UERJ, para amigos e nos grupos de família pedindo engajamento, além de encaminhar para fóruns/comunidades e postar no status.
 
-Integrante 2: [Nome]
+* Integrante 2: [Nome]
+  
 Canais utilizados: 
 
 Ações realizadas: 
 
-Integrante 3: [Nome]
+* Integrante 3: [Nome]
+  
 Canais utilizados: 
 
 Ações realizadas: 
 
-Integrante 4: [Nome]
+* Integrante 4: [Nome]
+  
 Canais utilizados: 
 
 Ações realizadas: 
 
-Integrante 5: [Nome]
+* Integrante 5: [Nome]
+  
 Canais utilizados: 
 
 Ações realizadas: 
