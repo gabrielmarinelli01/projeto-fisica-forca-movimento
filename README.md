@@ -46,6 +46,14 @@ Dentro do tema amplo de **Força e Movimento** e da inspiração no contexto his
 https://youtu.be/FxI6YcoSO8Q?is=DKU7tEa3t0Igb44n
 
 ---
+Resumo da física abordada: O vídeo aborda a dinâmica de um corpo num plano inclinado a interagir com uma mola, fundamentando-se na Segunda Lei de Newton:  
+$$\vec{F}_{\text{R}} = m \cdot \vec{a}$$A
+
+força gravítica (peso) decompõe-se nas componentes paralela
+($P_x$) 
+e perpendicular
+($P_y$) ao plano:$$P_x = m \cdot g \cdot \sin(\theta)$$$$
+P_y = m \cdot g \cdot \cos(\theta)$$A força normal ($N$) equilibra $P_y$, enquanto a força de atrito cinético se opõe ao movimento:$$F_{\text{at}} = \mu_c \cdot N$$Como o sistema inclui uma mola, introduz-se a Força Elástica (Lei de Hooke), que é proporcional à deformação ($x$) e à constante elástica da mola ($k$):   $$F_{\text{el}} = k \cdot x$$A aceleração é determinada pela resultante destas forças. Considerando a mola e o atrito a resistirem à descida do bloco, a equação expandida fica:   $$m \cdot g \cdot \sin(\theta) - \mu_c \cdot m \cdot g \cdot \cos(\theta) - k \cdot x = m \cdot a$$
 
 ## Roteiro Resumido do Vídeo
 
