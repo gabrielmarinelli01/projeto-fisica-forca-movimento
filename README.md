@@ -100,11 +100,12 @@ Canais utilizados: Whatsapp e instagram
 
 Ações realizadas: No dia 1 enviou o link do vídeo para amigos, familiares no privado e todos os grupos de Whatsapp e Instagram pedindo engajamento.
 
-* Integrante 3: [Nome]
-  
-Canais utilizados: 
+ *Integrante 3: Daniela
 
-Ações realizadas: 
+Canais utilizados: WhatsApp, LinkedIn e TikTok.
+
+Ações realizadas (Dia 1): Compartilhou o link do vídeo do YouTube diretamente em grupos pessoais, grupos acadêmicos e conversas individuais com amigos no WhatsApp, incentivando o engajamento inicial e o compartilhamento entre os colegas.
+Plano de divulgação (Ações contínuas para os dias restantes): Elaboração de uma publicação voltada para o ambiente profissional no LinkedIn, destacando a aplicação prática e o desenvolvimento do projeto acadêmico, além da divulgação direta do link no TikTok.
 
 * Integrante 4: [Nome]
   
