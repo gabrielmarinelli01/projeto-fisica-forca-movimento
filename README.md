@@ -41,12 +41,18 @@ Dentro do tema amplo de **Força e Movimento** e da inspiração no contexto his
 2. **Aplicações Práticas e Computacionais:** A escolha desse recorte possibilita a demonstração gráfica das equações matemáticas e vetoriais em tempo real (como a simulação em código da queda livre e o comportamento de corpos submetidos a forças resultantes), conectando a teoria formal do livro-texto (*Halliday & Resnick*) à experimentação visual.
 3. **Reflexão Ética e Científica:** Assim como a trajetória de Oppenheimer evidencia as consequências sociais das descobertas físicas, a compreensão do papel das forças na alteração dos movimentos demonstra como a física clássica fundamenta o funcionamento de tecnologias e estruturas que moldam o dia a dia da sociedade.
 ---
-* Link para o vídeo no canal da disciplina no YouTube:
+## Link para o vídeo no canal da disciplina no YouTube ##
 
 https://youtu.be/FxI6YcoSO8Q?is=DKU7tEa3t0Igb44n
 
 ---
-Resumo da física abordada: O vídeo aborda a dinâmica de um corpo num plano inclinado a interagir com uma mola, fundamentando-se na Segunda Lei de Newton:  
+## Link para o canal da disciplina no YouTube ##
+
+https://www.youtube.com/@fisicanatela
+
+---
+## Resumo da física abordada ## 
+O vídeo aborda a dinâmica de um corpo num plano inclinado a interagir com uma mola, fundamentando-se na Segunda Lei de Newton:  
 $$\vec{F}_{\text{R}} = m \cdot \vec{a}$$
 
 A força gravítica (peso) decompõe-se nas componentes paralela
