@@ -94,11 +94,11 @@ Canais utilizados: WhatsApp e Instagram.
 
 Ações realizadas: No dia 1 compartilhou o link do vídeo do YouTube nos stories do Instagram com uma breve chamada chamando atenção para o projeto. No WhatsApp, enviou diretamente para os grupos de graduandos da UERJ, para amigos e nos grupos de família pedindo engajamento, além de encaminhar para fóruns/comunidades e postar no status.
 
-* Integrante 2: [Nome]
+* Integrante 2: Gyovanna 
   
-Canais utilizados: 
+Canais utilizados: Whatsapp e instagram 
 
-Ações realizadas: 
+Ações realizadas: No dia 1 enviou o link do vídeo para amigos, familiares no privado e todos os grupos de Whatsapp e Instagram pedindo engajamento.
 
 * Integrante 3: [Nome]
   
