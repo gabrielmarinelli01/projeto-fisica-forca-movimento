@@ -92,7 +92,7 @@ A estratégia de divulgação do projeto apoia-se em uma abordagem colaborativa 
   
 Canais utilizados: WhatsApp e Instagram.
 
-Ações realizadas: No dia 1 compartilhou o link do vídeo do YouTube nos stories do Instagram com uma breve chamada chamando atenção para o projeto. No WhatsApp, enviou diretamente para os grupos de graduandos da UERJ, para amigos e nos grupos de família pedindo engajamento, além de encaminhar para fóruns/comunidades e postar no status.
+Ações realizadas: No dia 1 compartilhou o link do vídeo do YouTube nos stories do Instagram com uma breve chamada chamando atenção para o projeto. No WhatsApp, enviou diretamente para os grupos de graduandos da UERJ, para amigos e nos grupos de família pedindo engajamento, além de encaminhar para fóruns/comunidades e postar no status.No dia 2 continuou intensificando a divulgação nas redes sociais e foi possível conseguir manter uma boa estabilidade de visualizações.
 
 * Integrante 2: Gyovanna 
   
