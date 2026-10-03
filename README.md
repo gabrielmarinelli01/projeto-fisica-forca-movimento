@@ -107,11 +107,13 @@ Canais utilizados: WhatsApp, LinkedIn e TikTok.
 Ações realizadas (Dia 1): Compartilhou o link do vídeo do YouTube diretamente em grupos pessoais, grupos acadêmicos e conversas individuais com amigos no WhatsApp, incentivando o engajamento inicial e o compartilhamento entre os colegas.
 Plano de divulgação (Ações contínuas para os dias restantes): Elaboração de uma publicação voltada para o ambiente profissional no LinkedIn, destacando a aplicação prática e o desenvolvimento do projeto acadêmico, além da divulgação direta do link no TikTok.
 
-* Integrante 4: [Nome]
+* Integrante 4: Gabriel 
   
-Canais utilizados: 
+Canais utilizados: Whatsapp, Instagram, Twitter e TikTok.
 
-Ações realizadas: 
+Ações realizadas: No primeiro dia pra um engajamento inicial, decidi mandar o link do vídeo diretamente a grupo de familiares,amigos e conhecidos; Logo em seguida, fiz postagens públicas em redes como X (Twitter), instagram, Tiktok, e no próprio Whatsapp. Nas publicações e mensagens, eu pedia para além de acessarem o link, que pudesse engajar e clicar na curtida do nosso vídeo, sendo assim, dando uma visibilidade maior em números ao nosso projeto.
+
+Segundo dia: Depois de um ótimo resultado no primeiro dia, mantive postagens nas redes sociais temporárias, como Storys por exemplo. Consegui colocar mandar diretamente para mais pessoas e conseguindo mais engajamento.
 
 * Integrante 5: [Nome]
   
