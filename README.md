@@ -111,9 +111,9 @@ Plano de divulgação (Ações contínuas para os dias restantes): Elaboração 
   
 Canais utilizados: Whatsapp, Instagram, Twitter e TikTok.
 
-Ações realizadas: No primeiro dia pra um engajamento inicial, decidi mandar o link do vídeo diretamente a grupo de familiares,amigos e conhecidos; Logo em seguida, fiz postagens públicas em redes como X (Twitter), instagram, Tiktok, e no próprio Whatsapp. Nas publicações e mensagens, eu pedia para além de acessarem o link, que pudesse engajar e clicar na curtida do nosso vídeo, sendo assim, dando uma visibilidade maior em números ao nosso projeto.
+Ações realizadas: No primeiro dia para um engajamento inicial, decidi mandar o link do vídeo diretamente a grupo de familiares, amigos e conhecidos; Logo em seguida, fiz postagens públicas em redes como X (Twitter), instagram, Tiktok, e no próprio Whatsapp. Nas publicações e mensagens, eu pedia para além de acessarem o link, que pudessem engajar e clicar na curtida do nosso vídeo, sendo assim, dando uma visibilidade maior em números ao nosso projeto.
 
-Segundo dia: Depois de um ótimo resultado no primeiro dia, mantive postagens nas redes sociais temporárias, como Storys por exemplo. Consegui colocar mandar diretamente para mais pessoas e conseguindo mais engajamento.
+Segundo dia: Depois de um ótimo resultado no primeiro dia, mantive postagens nas redes sociais temporárias, como Storys, por exemplo. Consegui mandar diretamente para mais pessoas e conseguindo engajar mais.
 
 * Integrante 5: [Nome]
   
