@@ -98,7 +98,7 @@ Ações realizadas: No dia 1 compartilhou o link do vídeo do YouTube nos storie
   
 Canais utilizados: Whatsapp e instagram 
 
-Ações realizadas: No dia 1 enviou o link do vídeo para amigos, familiares no privado e todos os grupos de Whatsapp e Instagram pedindo engajamento.
+Ações realizadas: No dia 1 enviou o link do vídeo para amigos, familiares no privado e todos os grupos de Whatsapp e Instagram pedindo engajamento. No dia 2 enviou em grupos. No dia 3 enviou em grupos. No dia 3 enviou em grupos e privado de amigos e familiares pedindo engajamento 
 
 * Integrante 3: Daniela
 
