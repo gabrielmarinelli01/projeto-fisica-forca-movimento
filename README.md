@@ -115,11 +115,12 @@ Ações realizadas: No primeiro dia para um engajamento inicial, decidi mandar o
 
 Segundo dia: Depois de um ótimo resultado no primeiro dia, mantive postagens nas redes sociais temporárias, como Storys, por exemplo. Consegui mandar diretamente para mais pessoas e conseguindo engajar mais.
 
-* Integrante 5: [Nome]
+* Integrante 5: Samuel
   
-Canais utilizados: 
+Canais utilizados: Whatsapp, Instagram
 
-Ações realizadas: 
+Ações realizadas: No primeiro dia pra engajar o vídeo, eu compartilhei um stores no Instagram para que amigos e conhecidos pudessem ver, em seguida fiz uma corrente pra mandar em grupos de amigos para que eles pudessem ver e compartilhar também, 
+No segundo dia eu mantive a corrente com os grupos de amigos, mas ampliei a divulgação compartilhando em grupos da própria UERJ e em grupos de CA e Atletica.
 
 ---
 ## Acompanhamento e Evolução do Projeto (Kanban) ##
