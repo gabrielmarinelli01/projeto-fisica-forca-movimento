@@ -92,7 +92,7 @@ A estratégia de divulgação do projeto apoia-se em uma abordagem colaborativa 
   
 Canais utilizados: WhatsApp e Instagram.
 
-Ações realizadas: No dia 1 compartilhou o link do vídeo do YouTube nos stories do Instagram com uma breve chamada chamando atenção para o projeto. No WhatsApp, enviou diretamente para os grupos de graduandos da UERJ, para amigos e nos grupos de família pedindo engajamento, além de encaminhar para fóruns/comunidades e postar no status. No dia 2 continuou intensificando a divulgação nas redes sociais e foi possível conseguir manter uma boa estabilidade de visualizações. No dia 3 reforçou o encaminhamento do vídeo para outros grupos da  faculdade e conseguiu que pessoas comentassem positivamente sobre.
+Ações realizadas: No dia 1 compartilhou o link do vídeo do YouTube nos stories do Instagram com uma breve chamada chamando atenção para o projeto. No WhatsApp, enviou diretamente para os grupos de graduandos da UERJ, para amigos e nos grupos de família pedindo engajamento, além de encaminhar para fóruns/comunidades e postar no status. No dia 2 continuou intensificando a divulgação nas redes sociais e foi possível conseguir manter uma boa estabilidade de visualizações. No dia 3 reforçou o encaminhamento do vídeo para outros grupos da  faculdade e conseguiu que pessoas comentassem positivamente sobre. No dia 4 houve um intensivão nas divulgações em redes sociais e envio do link para grupos de outros cursos de exatas na UERJ.
 
 * Integrante 2: Gyovanna 
   
@@ -119,7 +119,7 @@ Segundo dia: Depois de um ótimo resultado no primeiro dia, mantive postagens na
   
 Canais utilizados: Whatsapp, Instagram
 
-Ações realizadas: No primeiro dia pra engajar o vídeo, eu compartilhei um stores no Instagram para que amigos e conhecidos pudessem ver, em seguida fiz uma corrente pra mandar em grupos de amigos para que eles pudessem ver e compartilhar também, 
+Ações realizadas: No primeiro dia pra engajar o vídeo, eu compartilhei um storie no Instagram para que amigos e conhecidos pudessem ver, em seguida fiz uma corrente pra mandar em grupos de amigos para que eles pudessem ver e compartilhar também.
 No segundo dia eu mantive a corrente com os grupos de amigos, mas ampliei a divulgação compartilhando em grupos da própria UERJ e em grupos de CA e Atletica.
 
 ---
