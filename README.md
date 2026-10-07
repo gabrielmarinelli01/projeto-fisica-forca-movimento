@@ -53,7 +53,7 @@ https://www.youtube.com/@fisicanatela
 ---
 ## Resumo da física abordada ## 
 O vídeo aborda a dinâmica de um corpo num plano inclinado a interagir com uma mola, fundamentando-se na Segunda Lei de Newton:  
-$$\vec{F}_{\text{R}} = m \cdot \vec{a}$$
+$$\vec{F}_{\text{R}} = m \cdot\vec{a}$$
 
 A força gravítica (peso) decompõe-se nas componentes paralela
 $$P_x = m \cdot g \cdot \sin(\theta)$$
