@@ -121,8 +121,9 @@ Canais utilizados: Whatsapp, Instagram
 
 Ações realizadas: No primeiro dia pra engajar o vídeo, eu compartilhei um storie no Instagram para que amigos e conhecidos pudessem ver, em seguida fiz uma corrente pra mandar em grupos de amigos para que eles pudessem ver e compartilhar também.
 No segundo dia eu mantive a corrente com os grupos de amigos, mas ampliei a divulgação compartilhando em grupos da própria UERJ e em grupos de CA e Atletica.
+
 ---
-## Resultado do nosso vídeo##
+## Resultado do nosso vídeo ##
 
 Pegamos os resultados do dia 06/10 (após 5 dias desde sua postagem) e obtvemos os seguintes resultados:
 
