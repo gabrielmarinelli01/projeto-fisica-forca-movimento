@@ -125,7 +125,7 @@ No segundo dia eu mantive a corrente com os grupos de amigos, mas ampliei a divu
 ---
 ## Resultado do nosso vídeo ##
 
-Pegamos os resultados do dia 06/10 (após 5 dias desde sua postagem) e obtvemos os seguintes resultados:
+Pegamos os resultados do dia 06/10 (após 5 dias desde sua postagem) e obtivemos os seguintes resultados:
 
 <img width="907" height="627" alt="image" src="https://github.com/user-attachments/assets/7253f4a4-e737-4e46-b853-fa88d2589a67" />
 
