@@ -125,11 +125,22 @@ No segundo dia eu mantive a corrente com os grupos de amigos, mas ampliei a divu
 ---
 ## Resultado do nosso vídeo ##
 
-Pegamos os resultados do dia 06/10 (após 5 dias desde sua postagem) e obtivemos os seguintes resultados:
+Pegamos os resultados dos dias 01/10,06/10 e 08/10 e obtivemos os seguintes resultados:
+
+<img width="739" height="189" alt="image" src="https://github.com/user-attachments/assets/ed423565-b5bb-48fd-9265-0d718e3cf358" />
+
+Tivemos esse resultado nas 5 primeiras horas desde sua postagem. Com 256 visualizações.
+
 
 <img width="907" height="627" alt="image" src="https://github.com/user-attachments/assets/7253f4a4-e737-4e46-b853-fa88d2589a67" />
 
-Como mostra a imagem, conseguimos a marca de 500 visualizações e 139 "Gostei".
+No dia 06/10 (5 dias após a sua postagem) Como mostra a imagem, conseguimos a marca de 500 visualizações e 139 "Gostei".
+
+<img width="1364" height="948" alt="image" src="https://github.com/user-attachments/assets/8559e7cf-bcda-49e0-9724-e8092ac9c91d" />
+
+No dia 8/10 (7 dias desde sua postagem) obtivemos o resultado de 528 visualizações e 142 “Gostei”.
+
+
 
 ---
 ## Acompanhamento e Evolução do Projeto (Kanban) ##
